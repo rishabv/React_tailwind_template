@@ -1,0 +1,32 @@
+.hide-text-area-info {
+    width: 0;
+    height: 0;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+    z-index: 0;
+    .show-text-area-info {
+        border-bottom: 1px solid gray;
+        width: 100%;
+    }
+    .text-area-info, .editable-title {
+        position: absolute;
+        left: 0;
+    }
+    .editable-title{
+        z-index: 1;
+    }
+    .text-area-info{
+        z-index: 2;
+    }
+    .editable-text-area-container {
+        position: relative;
+        height: 20px;
+        width: 50%;
+    }
+}
+.editable-input-container.active{
+    z-index: 999;
+}
+

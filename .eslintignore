@@ -1,0 +1,9 @@
+blueprints/**/files/**
+coverage/**
+node_modules/**
+dist/**
+src/index.html
+dist-server/**
+dist-shared/**
+tests/**
+src/version.js

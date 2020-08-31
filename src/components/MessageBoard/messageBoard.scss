@@ -1,0 +1,16 @@
+.board-wrapper {
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 0 5px;
+    .title-modal{
+        margin: 0;
+    }
+}
+.board-hide{
+    opacity: 0;
+    transition: opacity 0.3ms ease-in;
+}
+.board-show{
+    opacity: 1;
+    transition: opacity 0.3ms ease-in;
+}

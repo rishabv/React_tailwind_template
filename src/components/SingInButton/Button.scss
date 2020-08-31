@@ -1,0 +1,18 @@
+.sing-in-button{
+    display: inline-block;
+    .btn-body{
+        width: 191px;
+        height: 46px;
+        margin: 5px;
+        background: url('./assets/btn_google_signin_dark_normal_web.png');
+        opacity: 0.7;
+        transition: opacity 100ms ease;
+        &:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+        &:focus{
+            background: url('./assets/btn_google_signin_dark_focus_web.png');
+        }
+    }
+}

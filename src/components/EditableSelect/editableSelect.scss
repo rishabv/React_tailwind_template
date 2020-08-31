@@ -1,0 +1,21 @@
+.hide-select-info{
+    width: 0;
+    height: 0;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+    .Select-control, .Select-input{
+        @extend .hide-select-info
+    }
+    .Select-arrow-zone{
+        display: none;
+    }
+}
+
+.hide-select-info .Select-value{
+    line-height: 0!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    border: none;
+}

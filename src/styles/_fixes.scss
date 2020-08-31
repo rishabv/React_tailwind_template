@@ -1,0 +1,4 @@
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+    margin-left: 0!important; // space out consecutive inline controls
+}

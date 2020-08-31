@@ -1,0 +1,95 @@
+//.core-layout__viewport {
+//  padding-top: 4rem;
+//}
+.core-layout__viewport{
+    position: relative;
+    >.spinner{
+        position: absolute;
+        top: calc(50vh - 75px);
+        left: calc(50% - 37px);
+        width: 74px;
+        height: 74px;
+    }
+    .select-view {
+        >div {
+            >.spinner{
+                margin-top: 10vh;
+                width: 75px;
+                height: 75px;
+            }
+        }
+    }
+}
+.wrapper {
+    height: 100%;
+    backface-visibility: hidden;
+    .inner-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 100vh;
+        footer{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            .link-footer{
+                font-size: 18px;
+                color: white;
+                padding: 0 50px;
+                display: inline-block;
+                margin-right: 20px;
+                margin-bottom: 15px;
+                line-height: 55px;
+                @media (max-width: 420px){
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    font-size: 16px;
+                }
+                &:hover,&:focus{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            .logos{
+                background: #c67e07;
+            }
+            .contactUs{
+                background: #4849a1;
+            }
+        }
+    }
+}
+
+@media (min-width:1170px) {
+  .wrapper {
+    .inner-wrapper {
+      .container {
+        max-width: 1600px;
+        width: 87.5%;
+        .container{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.loading {
+    background-color: #183d68;
+    height: 3px;
+    z-index: 999;
+    position: absolute;
+    box-shadow: 0 0 6px #2683cc;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+    .link-footer-wrapper{
+        display: none;
+    }
+    .wrapper {
+        .inner-wrapper {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+}

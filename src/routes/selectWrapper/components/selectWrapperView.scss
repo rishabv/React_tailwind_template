@@ -1,0 +1,379 @@
+.main-header {
+		background: #fafafa;
+		width: 100%;
+}
+.top-dashboard--container:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.businessNameOnly {
+	font-size: 14px;
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: 700;
+    + .glyphicon-question-sign{
+        top: 2px;
+        margin-left: 3px;
+    }
+}
+.select-view {
+    min-height: 90vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .home-container {
+        position: relative;
+    }
+    .title-dashboard,.select-title{
+        text-align: left;
+    }
+    .title-dashboard {
+        font-size: 1.8em;
+        margin-top: 0;
+        font-weight: 600;
+        //position: absolute;
+        float: left;
+    }
+    .select-title {
+        margin-bottom: 0;
+        font-weight: 600;
+        margin-top: 15px;
+        padding-bottom: 10px;
+        //border-bottom: 1px solid #a4a4a4;
+    }
+    .businessSelect{
+        margin-top: 5px;
+        text-align: left;
+        font-weight: 600;
+        margin-bottom: 10px;
+				background-color: #7a7a7a;
+				max-width: 30em;
+				padding-left: .5em;
+		span {
+			font-size: 1em;
+            @media screen and (max-width: 768px){
+                font-size: 16px;
+            }
+		}
+		.Select-control {
+			border: none;
+			background: transparent;
+			border-radius: 0;
+      max-width: 100%;
+			.Select-value {
+				padding-left: 0;
+                top: 0;
+			}
+            .Select-arrow-zone{
+                padding-top: 1px;
+								.Select-arrow{
+									border-top-color: #fff;
+								}
+            }
+		}
+
+    }
+    .nav-mobile-wrap{
+        display: none;
+    }
+		.contact {
+			margin-right: -15px;
+		}
+
+    .top-part-dashboard{
+        position: relative;
+        //box-shadow: 0 4px 5px rgba(57,63,72,.3);
+				background: #fafafa;
+				.masq-user-not-exist {
+					color: #fa0000;
+				}
+				.topBusinessTitle {
+					text-align: left;
+					.businessNameOnly {
+						margin-right: 5px;
+					}
+				}
+				padding-top: 10px;
+                @media (max-width: 30em){
+                    //padding-top: 90px;
+                }
+				&:after{
+          content: '';
+			    width: 100%;
+			    height: 1px;
+			    background: rgba(90, 90, 92, 0.36);
+			    display: block;
+			    position: absolute;
+			    bottom: 3.5em;
+          @media (max-width: 48em){
+              bottom: 7em;
+
+          }
+				}
+            @media screen and (max-width: 1024px) and (min-width: 320px) {
+                &:after{
+                    display: none;
+                }
+            }
+        .item-menu{
+            display: inline-block;
+            padding: 0px 0;
+            margin-top: 20px;
+            margin-right: 5px;
+            a {
+                padding: 8px 20px;
+                display: inline-block;
+                color: #ffffff;
+                background: #5b5a5f;
+                &:hover{
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+            }
+        }
+        .add-service-button{
+            margin-right: 10px;
+        }
+				.nav-wrapper{
+                    display: none;
+				}
+				.desktopTopBackButton {
+					display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-pack: start;
+                    justify-content: flex-start;
+                    font-size: 16px;
+                    -ms-flex-align: center;
+                    align-items: center;
+					.nav-item {
+						display: inline-block;
+						color: #333;
+						font-weight: normal;
+                        padding-left: .5em;
+                        border-left: 1px solid;
+                        &.back-home-link{
+                            padding-left: 0;
+                            border-left: none;
+                        }
+					}
+					.logout-btn {
+						padding-right: 15px;
+						border-right: 1px solid;
+						margin-right: 15px;
+					}
+				}
+				.masq-wrapper {
+					label {
+						width: 260px;
+						text-align: left;
+					}
+				}
+				.back-services-link {
+					margin-left: 10px;
+				}
+        .update-item{
+            .glyphicon-question-sign{
+                cursor: pointer;
+                top: -10px;
+                left: 3px;
+            }
+        }
+        .text-align-right{
+            @media (max-width: 30em){
+                text-align: left;
+            }
+        }
+        .container{
+            position: relative;
+        }
+        .col-md-3{
+            position: inherit;
+        }
+				.switch-back-masq {
+					color: #4095bf;
+					cursor: pointer;
+				}
+				/* Autocomplete css*/
+				.autocomplete-wrapper {
+					position: relative;
+				}
+				.menu {
+				  position: absolute;
+				  box-sizing: border-box;
+				  width: 100%;
+				  border: 1px solid #cccccc;
+					left: 0;
+					z-index: 99;
+					background: #fff;
+				}
+
+				.item {
+				  padding: 2px 6px;
+				  cursor: pointer;
+					border-bottom: 1px solid #eee;
+				}
+
+				.item-highlighted {
+				  color: white;
+				  background-color: #4095bf;
+				}
+
+				.masq-as-wrapper {
+					.masq-as {
+						color: #FA0000;
+						font-size: 20px;
+						font-weight: bold;
+						text-transform: uppercase;
+					}
+				}
+    }
+    .update-header-modal{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .welcome-slogan{
+        text-align: right;
+        width: 100%;
+        display: inline-block;
+        padding: 15px 0;
+        margin-top: 48px;
+        @media (max-width: 48em){
+            margin-top: 0;
+        }
+    }
+    .slogan-home {
+        width: 100%;
+        margin: 10vh 0 4vh 0;
+        text-align: left;
+        .blue-line{
+            &:hover{
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+    }
+    .home-info {
+        text-align: left;
+        margin-bottom: 10vh;
+    }
+    .logout-mobile{
+        display: none;
+    }
+    footer{
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+}
+
+.Select.is-focused > .Select-control{
+	background: transparent !important;
+}
+.Select.is-open > .Select-control .Select-arrow-zone .Select-arrow{
+	border-bottom-color: #fff;
+}
+.Select.has-value.Select--single > .Select-control .Select-value span.Select-value-label{
+	color: #fff;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+    .select-view{
+        .top-dashboard--container{
+            display: none;
+        }
+        .top-part-dashboard{
+            padding-bottom: 10px;
+            margin-bottom: 1.5em;
+            .nav-wrapper{
+                display: none;
+            }
+            .radio-group {
+                text-align: left;
+            }
+        }
+        .title-dashboard{
+            display: none;
+        }
+        .logout-mobile{
+            display: block;
+            text-align: left;
+        }
+        .welcome-slogan{
+            display: none;
+        }
+        .nav-mobile-wrap{
+            display: flex;
+            justify-content: flex-start;
+            font-size: 16px;
+            align-items: center;
+            margin-bottom: 15px;
+            margin-top: 5px;
+            .nav-item{
+                display: inline-block;
+                color: #333;
+                padding-left: .5em;
+                border-left: 1px solid;
+                line-height: 1;
+                &.back-home-link{
+                    padding-left: 0;
+                    border-left: none;
+                }
+                &:hover{
+                    color: #777;
+                    text-transform: none;
+                }
+            }
+            .logout-btn{
+                position: absolute;
+                right: 15px;
+                padding-left: 0;
+                border-left: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 960px){
+    .select-view .nav-mobile-wrap .logout-btn{
+        position: absolute;
+        right: -12px;
+    }
+}
+.user-name-title{
+    font-weight: 600;
+}
+.topright {
+    float: right;
+    margin-bottom: 15px;
+    color: #000;
+    @media screen and (min-width: 960px){
+        margin-right: -26px;
+    }
+}
+@media only screen and (min-width:60em){
+    .select-view {
+        .select-dashboard-row{
+            .businessSelect{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.top-part-dashboard.it_is_masq_action{
+    padding-top: 65px;
+}
+.masq-as-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 0.5em 0;
+    z-index: 450;
+    box-shadow: 0 2px 3px #ccc;
+}

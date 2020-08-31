@@ -1,0 +1,58 @@
+.btn.btn-info {
+    background: $color-blue-bg;
+    border: none;
+    border-radius: 0;
+    line-height: 1;
+    padding: 12px;
+}
+
+.btn.btn-danger {
+		background: $red;
+		border: none;
+		border-radius: 0;
+}
+
+.pagination-box{
+    width: 100%;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+    .btn{
+        padding: 6px 12px;
+        text-decoration: none;
+        color: #2278c9;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 0;
+        &:focus{
+            outline: none;
+        }
+    }
+    .btn.active{
+        color: #fff;
+        background-color: #2278c9;
+        border-color: #2278c9;
+        cursor: default;
+    }
+    .btn:first-child{
+        margin-left: 0;
+        border-bottom-left-radius: 4px!important;
+        border-top-left-radius: 4px!important;
+    }
+    .btn:last-child{
+        border-bottom-right-radius: 4px!important;
+        border-top-right-radius: 4px!important;
+    }
+}
+
+//@media screen and (max-width: 1024px) and (min-width: 320px) {
+    .btn{
+        text-transform: capitalize;
+    }
+    .btn.update-btn{
+        background: #2278c9;
+        border-radius: 0;
+        border: none;
+    }
+//}

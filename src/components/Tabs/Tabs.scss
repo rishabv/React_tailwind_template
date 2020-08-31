@@ -1,0 +1,40 @@
+.tab-container{
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #b3b3b3;
+  margin-bottom: 4vh;
+  a{
+    position: relative;
+    padding: 15px 20px;
+    border: 1px solid #ffffff;
+    color: #333333;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .route--active{
+    border: 1px solid #b3b3b3;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+
+    &:hover{
+      text-decoration: none;
+    }
+
+    &:after{
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      content: "";
+      background: #fff;
+      z-index: 1;
+    }
+
+  }
+}

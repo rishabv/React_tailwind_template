@@ -1,0 +1,74 @@
+.auth-view{
+    background-color: #efefef;
+    height: 100%;
+    padding-bottom: 100px;
+    min-height: 100vh;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    .centered-container{
+        width: 400px;
+        padding: 10px 20px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-flow: column;
+    }
+    .err-message{
+        width: 400px;
+        padding: 10px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        background-color: #fef5f1;
+        border: 1px solid #ed541d;
+    }
+    .req{
+        color: red;
+        margin-left: 5px;
+    }
+    .login-title {
+        display: block;
+        width: 100%;
+    }
+    .subtitle{
+        font-size: 14px;
+        color: #6A6A6A;
+    }
+    .login-form {
+        width: 100%;
+    }
+    .error-group {
+        input{
+            border: 2px solid red;
+        }
+    }
+    .title-box{
+        padding: 0 50px;
+        font-size: 10px;
+        color: #ccc;
+    }
+    .err-message{
+        color: red;
+    }
+    .bottom-login-part{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+.non-member-message {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+    .auth-view .centered-container {
+        width: 320px;
+        padding: 10px;
+    }
+}

@@ -5,14 +5,12 @@ import Modal from '../../../components/Modal/Modal';
 import Select from '../../../components/Select/Select';
 import TechnicalSupportMessage from '../../../components/TechnicalSupportMessage/TechnicalSupportMessage';
 import RadioButton from '../../../components/RadioButton/RadioButton';
-import MemberWidget from '../../../components/MemberWidget/MemberWidget';
 import PropTypes from 'prop-types';
 import _get from 'lodash/get';
 import _sortBy from 'lodash/sortBy';
 import './selectWrapperView.scss';
 import 'react-select/dist/react-select.css';
 import auth from '../../../helpers/auth';
-import getSiteLogo from '../../../helpers/getSiteLogo';
 import Spinner from '../../../components/Spinner/Spinner';
 import Autocomplete from 'react-autocomplete';
 

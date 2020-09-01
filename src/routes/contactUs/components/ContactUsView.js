@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import TechnicalSupportMessage from '../../../components/TechnicalSupportMessage/TechnicalSupportMessage';
 // import PropTypes from 'prop-types';
 import './ContactUsView.scss';
-import FooterWidget from '../../../components/FooterWidget/FooterWidget';
+// import FooterWidget from '../../../components/FooterWidget/FooterWidget';
 import PropTypes from "prop-types";
 
 export class ContactUsView extends React.PureComponent {

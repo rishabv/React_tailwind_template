@@ -1,36 +1,37 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import AccountBox from './AccountBox/AccountBox';
-import MessageBoard from '../../../components/MessageBoard/MessageBoard';
-import TechnicalSupportMessage from '../../../components/TechnicalSupportMessage/TechnicalSupportMessage';
-import { Link } from 'react-router-dom';
-import './AccountView.scss';
-import FooterWidget from '../../../components/FooterWidget/FooterWidget';
+import React from "react";
+import PropTypes from "prop-types";
+import AccountBox from "./AccountBox/AccountBox";
+import MessageBoard from "../../../components/MessageBoard/MessageBoard";
+import TechnicalSupportMessage from "../../../components/TechnicalSupportMessage/TechnicalSupportMessage";
+import { Link } from "react-router-dom";
+import "./AccountView.scss";
+
 const mocAddress = {
-    street: '',
-    countryName: '',
-    postalCode: ''
+    street: "",
+    countryName: "",
+    postalCode: "",
 };
+
 export class AccountView extends React.Component {
-    constructor (props) {
+    constructor(props) {
         super(props);
         this.state = {
-            hasError: false
+            hasError: false,
         };
         this.saveDetails = this.saveDetails.bind(this);
     }
-    componentDidCatch () {
+    componentDidCatch() {
         this.setState({ hasError: true });
     }
-    saveDetails () {
+    saveDetails() {
         this.props.sendChangedAccountSettings();
     }
-    render () {
+    render() {
         const {
             sendMessage,
             isErrMessage,
             isAdmin,
-            accountInfo
+            accountInfo,
         } = this.props.accountState;
         const {
             firstName,
@@ -40,26 +41,26 @@ export class AccountView extends React.Component {
             status,
             subscribeNewsletters,
             balanceForThisPeriod,
-            accountAddress
+            accountAddress,
         } = this.props.accountState.accountInfo;
-        const {
-            street,
-            countryName,
-            postalCode
-        } = accountAddress || mocAddress;
+        const { street, countryName, postalCode } =
+            accountAddress || mocAddress;
         return (
-            <div className='account-details-view'>
-                {this.state.hasError
-                    ? <TechnicalSupportMessage />
-                    : <div className='container'>
-                        <div className='home-btn-row row'>
-                            <div className='col-md-12'>
-                                <Link to='/dashboard' >Home</Link>
+            <div className="account-details-view">
+                {this.state.hasError ? (
+                    <TechnicalSupportMessage />
+                ) : (
+                    <div className="container">
+                        <div className="home-btn-row row">
+                            <div className="col-md-12">
+                                <Link to="/dashboard">Home</Link>
                             </div>
                         </div>
-                        <div className='info-card row'>
-                            <div className='col-md-12'>
-                                <h3 className='info-card-title'>Account details</h3>
+                        <div className="info-card row">
+                            <div className="col-md-12">
+                                <h3 className="info-card-title">
+                                    Account details
+                                </h3>
                                 <AccountBox
                                     isAdmin={isAdmin}
                                     firstName={firstName}
@@ -76,16 +77,23 @@ export class AccountView extends React.Component {
                                     setLastName={this.props.setLastName}
                                     setLoginName={this.props.setLoginName}
                                     setUserEmail={this.props.setUserEmail}
-                                    setSubscribeNewsletters={this.props.setSubscribeNewsletters}
+                                    setSubscribeNewsletters={
+                                        this.props.setSubscribeNewsletters
+                                    }
                                     setStreet={this.props.setStreet}
                                     setCountryName={this.props.setCountryName}
                                     setPostalCode={this.props.setPostalCode}
                                 />
                             </div>
                         </div>
-                        <div className='row save-container'>
-                            <div className='col-md-12'>
-                                <button className='btn btn-default save-button' onClick={this.saveDetails}>SAVE ACCOUNT SETTINGS</button>
+                        <div className="row save-container">
+                            <div className="col-md-12">
+                                <button
+                                    className="btn btn-default save-button"
+                                    onClick={this.saveDetails}
+                                >
+                                    SAVE ACCOUNT SETTINGS
+                                </button>
                                 <MessageBoard
                                     boardText={sendMessage}
                                     openBoardStatus={sendMessage.length > 0}
@@ -94,8 +102,8 @@ export class AccountView extends React.Component {
                             </div>
                         </div>
                     </div>
-                }
-                <div className='col-sm-12'>
+                )}
+                <div className="col-sm-12">
                     <FooterWidget memberData={accountInfo} forFooter />
                 </div>
             </div>
@@ -113,7 +121,7 @@ AccountView.propTypes = {
     setStreet: PropTypes.func.isRequired,
     setCountryName: PropTypes.func.isRequired,
     setPostalCode: PropTypes.func.isRequired,
-    sendChangedAccountSettings: PropTypes.func.isRequired
+    sendChangedAccountSettings: PropTypes.func.isRequired,
 };
 
 export default AccountView;

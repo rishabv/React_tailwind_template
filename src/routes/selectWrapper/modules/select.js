@@ -2,44 +2,12 @@ import auth from '../../../helpers/auth';
 import fetch from 'isomorphic-fetch';
 import _get from 'lodash/get';
 import objectWithProps from '../../../helpers/objectWithProps';
-import {
-    setService,
-    setServiceLimit,
-    afterBusinessChangeServicesCallback,
-    getDetailedServiceByServiceUUID,
-    getAllServices,
-    getPostcodesByService
-} from '../../services/modules/services';
-import { getLeadsByBusinessUUID } from '../../businessInformation/modules/businessInfo';
-import { setDirectoryDetailsData, setSelectedEmptyImage } from '../../directoryDetails/modules/directoryDetails';
-import {
-    setFeedback,
-    getUsersSelectedByRole,
-    setCurrentTotal,
-    setUninvoicedFees,
-    setUninvoicedLeads,
-    setUninvoicedDiscount,
-    setInvoicedFeesAverage,
-    addPlannedCallCollection,
-    updateSuspendBlockForAll,
-    setInvoicedFeesExvat,
-    setinvoicedFeesExvatAverage,
-    setInvoicedVat
-} from '../../dashboard/modules/dashboard';
-
-import {
-    getPostcodeSetsByBusinessUUID
-} from '../../postcodeSet/modules/postcodeSet';
 
 import {
     setAccountInfo,
     setIsAdmin,
     setMemberStatus
 } from '../../account/modules/account';
-import { setPrevLogo, setBusinessDetailsData } from '../../businessDetails/modules/businessDetails';
-import { getInvoicesCount, getAllInvoices } from '../../invoices/modules/invoices';
-import {getPostcodesBoxDataByBusinessUUID} from "../../postcodeSet";
-
 
 const mobileSize = {
     maxWidth: 1024,

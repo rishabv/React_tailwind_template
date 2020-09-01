@@ -20,7 +20,6 @@ pre {
         text-indent: -999999px;
         background: center center no-repeat;
         background-size: 100%;
-        background-image: url('../images/local-surveyors-direct-new.png');
         display: block;
         width: 285px;
         max-width: 100%;
@@ -47,26 +46,6 @@ body {
     .form-control, output{
         font-size: 16px;
     }
-}
-.logo_surveyor {
-  a {
-    background-image: url('../images/local-surveyors-direct-new.png');
-  }
-}
-.logo_electrician {
-  a {
-    background-image: url('../images/logo_electrician.png');
-  }
-}
-.logo_architect {
-  a {
-    background-image: url('../images/logo_architect.png');
-  }
-}
-.logo_conveyancing {
-  a {
-    background-image: url('../images/logo_conveyancing.png');
-  }
 }
 .company-logo{
     max-width: 80%;

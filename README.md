@@ -1,7 +1,7 @@
 # Boilerplate
 
 To start in dev mode:
-
+ 
 
 ```bash
 $ yarn install    # Install project dependencies
@@ -52,7 +52,7 @@ These are global variables available to you anywhere in your source code. If you
 │   │          ├──ExampComponent.scss  # Style component file
 │   ├── containers                     # Global Reusable Container Components
 │   ├── layouts                        # Components that dictate major page structure
-│   │   └── PageLayout                 # Global application layout in which to render routes
+│   │   └─ PageLayout                 # Global application layout in which to render routes
 │   ├── routes                         # Main route definitions and async split points
 │   │   ├── index.js                   # Bootstrap main application routes with store
 │   │   ├── dashboard                  # Fractal route
@@ -108,4 +108,3 @@ and create global style classes
 │         ├──core.scss                 # Import all listed above scss files
 
 ```
-

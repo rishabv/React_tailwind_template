@@ -1,6 +1,6 @@
 {
     "name": "reactjs-boilerplate",
-    "version": "0.1.713",
+    "version": "0.1.715",
     "description": "",
     "main": "index.js",
     "private": true,
@@ -168,7 +168,8 @@
         "url-loader": "^0.5.9",
         "webpack": "^3.4.1",
         "webpack-auto-inject-version": "^0.5.14",
-        "yargs": "^8.0.2"
+        "yargs": "^8.0.2",
+        "yarn": "^1.22.5"
     },
     "devDependencies": {
         "babel-eslint": "^7.2.3",
